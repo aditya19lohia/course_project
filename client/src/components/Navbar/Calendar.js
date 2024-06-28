@@ -44,7 +44,7 @@ const Calendar = () => {
   const selectDate = (date) => {
     const allCells = document.querySelectorAll('.calendar-table tbody td');
     allCells.forEach((cell) => {
-      if (cell.textContent == date) {
+      if (parseInt(cell.textContent) === date) {
         cell.classList.add('selected');
       } else {
         cell.classList.remove('selected');
@@ -53,25 +53,21 @@ const Calendar = () => {
   };
 
   const handlePrevMonth = () => {
-    setCurrentMonth(prev => {
-      const newMonth = prev - 1;
-      if (newMonth < 0) {
-        setCurrentYear(year => year - 1);
-        return 11;
-      }
-      return newMonth;
-    });
+    if (currentMonth === 0) {
+      setCurrentMonth(11);
+      setCurrentYear(prevYear => prevYear - 1);
+    } else {
+      setCurrentMonth(prevMonth => prevMonth - 1);
+    }
   };
 
   const handleNextMonth = () => {
-    setCurrentMonth(prev => {
-      const newMonth = prev + 1;
-      if (newMonth > 11) {
-        setCurrentYear(year => year + 1);
-        return 0;
-      }
-      return newMonth;
-    });
+    if (currentMonth === 11) {
+      setCurrentMonth(0);
+      setCurrentYear(prevYear => prevYear + 1);
+    } else {
+      setCurrentMonth(prevMonth => prevMonth + 1);
+    }
   };
 
   useEffect(() => {
