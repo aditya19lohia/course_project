@@ -10,26 +10,34 @@ function Navbar() {
     setSidebarOpen(!isSidebarOpen);
   };
 
+  const handleMouseEnter=()=>{
+    setSidebarOpen(true);
+  }
+  const handleMouseLeave=()=>{
+    setSidebarOpen(false)
+  }
+
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
     document.body.classList.toggle('dark', !isDarkMode);
   };
 
   return (
-    <div className={`sidebar ${isSidebarOpen ? '' : 'close'}`}>
+    <div className={`sidebar ${isSidebarOpen ? '' : 'close'}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <header>
         <div className="image-text">
           <span className="image">
             <img src="path/to/your/logo.png" alt="Logo" />
           </span>
 
-          {/* <div className="text header-text">
+          <div className="text header-text">
             <span className="main">RateMyCourse</span>
-            <span className="sub">Brand Subtitle</span>
-          </div> */}
+          
+          </div>
+         
         </div>
 
-        <i className="toggle" onClick={toggleSidebar}><LogOut size={13} /></i>
+        
       </header>
 
       <div className="menu-bar">
@@ -41,6 +49,7 @@ function Navbar() {
               <a href="#">
                 <i className="icons"><Home size={20} /></i>
                 <span className="text">Dashboard</span>
+                
               </a>
             </li>
             <li>

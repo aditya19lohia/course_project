@@ -16,7 +16,8 @@
 }
 
 .sidebar {
-  position: fixed;
+  position:absolute;
+  /* position: fixed; */
   top: 0;
   left: 0px;
   height: 100%;
@@ -28,6 +29,7 @@
 
 .sidebar header {
   position: relative;
+  
 }
 
 .sidebar .image-text img {
@@ -126,6 +128,9 @@
 }
 
 .sidebar .menu-bar {
+  position:relative;
+  /* top:6%; */
+  bottom:0;
   height: calc(100% - 50px);
   display: flex;
   flex-direction: column;
