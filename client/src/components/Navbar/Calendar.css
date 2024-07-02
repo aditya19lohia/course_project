@@ -8,7 +8,7 @@ body {
 
 .calendar-container {
     position: absolute;
-    top: 40px; /* Adjust as necessary */
+    top: 70px; /* Adjust as necessary */
     right: 20px; /* Adjust as necessary */
     background-color: #fff;
     border-radius: 10px;
