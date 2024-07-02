@@ -1,0 +1,229 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; /* Background color white */
+  padding: 10px 20px;
+  color: #282c34; /* Dark text color for better contrast */
+  position: fixed; /* Fixed position */
+  top: 0; /* Positioned at the top */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it is above other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better separation */
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.project-name-link {
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+}
+
+.project-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.topbar-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc; /* Border for the search bar */
+}
+
+.topbar-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.profile {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #282c34; /* Profile text color for better contrast */
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff; /* Dropdown background color white */
+  color: #000; /* Dropdown text color black */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+/* TopBar.css */
+
+
+.topbar-left, .topbar-right, .topbar-center {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.project-name-link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-bar {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.filter-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.profile {
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background-color: #F5F5F5;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  animation: slide-down 0.3s ease-out;
+}
+
+.filter-column {
+  margin-bottom: 20px;
+}
+
+.filter-column h3 {
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.filter-column label {
+  display: block;
+  margin-bottom: 5px;
+  color: #7A7A7A;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.apply-filter-button, .clear-filter-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.apply-filter-button {
+  background-color: #8C61FF;
+  color: #FFFFFF;
+}
+
+.clear-filter-button {
+  margin-left: 20px;
+  background-color: #8C61FF;
+  color: #FFFFFF;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
