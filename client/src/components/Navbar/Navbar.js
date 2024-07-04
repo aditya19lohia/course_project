@@ -14,7 +14,7 @@ function Navbar() {
     setSidebarOpen(true);
   }
   const handleMouseLeave=()=>{
-    setSidebarOpen(false)
+    setSidebarOpen(true)
   }
 
   const toggleDarkMode = () => {
@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <div className={`sidebar ${isSidebarOpen ? '' : 'close'}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      <header>
+      {/* <header>
         <div className="image-text">
           <span className="image">
             <img src="path/to/your/logo.png" alt="Logo" />
@@ -38,7 +38,7 @@ function Navbar() {
         </div>
 
         
-      </header>
+      </header> */}
 
       <div className="menu-bar">
         <div className="menu">
