@@ -14,7 +14,7 @@ function Navbar() {
     setSidebarOpen(true);
   }
   const handleMouseLeave=()=>{
-    setSidebarOpen(true)
+    setSidebarOpen(false)
   }
 
   const toggleDarkMode = () => {

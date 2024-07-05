@@ -7,7 +7,7 @@ function Home() {
     <div>
     
     <Navbar />
-    <Calendar />
+    {/* <Calendar /> */}
     <TopBar />
     
     </div>
