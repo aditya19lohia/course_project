@@ -32,9 +32,9 @@ p, span, a, li, input, button {
 
 
 :root {
-  --body-color: #F5F5F5;
+  --body-color: #f0f1f0;
   --sidebar-color: #FFFFFF;
-  --primary-color: #8C61FF;
+  --primary-color: #8338eb;
   --primary-color-light: #F5F5F5;
   --toggle-color: #DDD;
   --text-color: #333333;
