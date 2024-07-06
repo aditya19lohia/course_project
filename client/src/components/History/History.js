@@ -1,5 +1,5 @@
 import React from 'react';
-import './History.css';
+/*import './History.css';*/
 
 const History = () => {
   const historyData = [
@@ -12,7 +12,7 @@ const History = () => {
 
   return (
     <div className="history-container">
-      <h2 className="history-title">History</h2>
+      <h2 className="history-title">Recent Activity</h2>
       <div className="history-content">
         {historyData.map((item, index) => (
           <div className="history-item" key={index}>

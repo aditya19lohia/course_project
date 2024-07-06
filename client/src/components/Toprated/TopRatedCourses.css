@@ -1,0 +1,86 @@
+.top-rated-courses {
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 25%;
+    max-height: 400%;
+  }
+  
+  .top-rated-courses__title {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #0b063e;
+  }
+  
+  .course-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .course-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .course-item:last-child {
+    border-bottom: none;
+  }
+  
+  .course-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .course-info {
+    flex-grow: 1;
+  }
+  
+  .course-name {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .professor-name {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .course-rating {
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+
+  @media (max-width: 768px) {
+    .top-rated-courses {
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .course-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .course-icon {
+      margin-bottom: 8px;
+    }
+  
+    .course-rating {
+      margin-top: 4px;
+    }
+  }
