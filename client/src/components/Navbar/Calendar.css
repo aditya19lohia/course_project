@@ -1,6 +1,6 @@
 
 .calendar-container {
-    position: absolute;
+    position: fixed;
     top: 80px; /* Adjust as necessary */
     right: 20px; /* Adjust as necessary */
     background-color: var(--sidebar-color);
