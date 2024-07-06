@@ -1,9 +1,9 @@
 
 .calendar-container {
     position: absolute;
-    top: 70px; /* Adjust as necessary */
+    top: 80px; /* Adjust as necessary */
     right: 20px; /* Adjust as necessary */
-    background-color: #fff;
+    background-color: var(--sidebar-color);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px; /* Reduced padding */
@@ -43,10 +43,10 @@
   
   .calendar-table tbody td {
     cursor: pointer;
-  }
-  
-  .calendar-table tbody td.selected {
-    background-color: #6A0DAD;
+}
+
+.calendar-table tbody td.selected {
+    background-color:#a15cf3;
     color: #fff;
   }
   

@@ -1,229 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Poppins:wght@300;400;500;600;700&display=swap");
+
 .topbar {
-  display: flex;
+ display: flex;
+  position: fixed; /* Use fixed positioning to keep the top bar at the top of the screen */
+  top: 0; /* Align to the top of the viewport */
+  left: 0; /* Align to the left of the viewport */
+  width: 100%; /* Ensure it spans the full width of the screen */
+  height: 50px;
+  z-index: 100;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff; /* Background color white */
-  padding: 10px 20px;
-  color: #282c34; /* Dark text color for better contrast */
-  position: fixed; /* Fixed position */
-  top: 0; /* Positioned at the top */
-  width: 100%; /* Full width */
-  z-index: 1000; /* Ensure it is above other elements */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better separation */
+  background-color: #ffff; /* Background color */
+  padding: 10px 20px; /* Padding inside the top bar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+  box-sizing: border-box; 
 }
 
-.topbar-left {
+.DashBoard{
+
+  font-weight: 400;
   display: flex;
-  align-items: center;
-}
-
-.logo {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.project-name-link {
-  text-decoration: none; /* Remove underline from link */
-  color: inherit; /* Inherit text color */
-}
-
-.project-name {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.topbar-center {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.search-bar {
-  width: 50%;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc; /* Border for the search bar */
-}
-
-.topbar-right {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.profile {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  color: #282c34; /* Profile text color for better contrast */
-}
-
-.arrow {
-  margin-left: 5px;
-}
-
-.dropdown {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #fff; /* Dropdown background color white */
-  color: #000; /* Dropdown text color black */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.dropdown ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.dropdown li {
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.dropdown li:hover {
-  background-color: #f0f0f0;
+  align-self: center;
+  margin:0 0 0 1rem;
 }
 
 
-
-/* TopBar.css */
-
-
-.topbar-left, .topbar-right, .topbar-center {
-  display: flex;
-  align-items: center;
+ h2{
+ 
+  font-weight: 600;
 }
 
-.logo {
-  height: 40px;
-}
-
-.project-name-link {
+a{
   text-decoration: none;
-  color: #333333;
-  font-size: 1.5em;
-  margin-left: 10px;
+  color:inherit;
 }
-
-.search-bar-container {
+.logo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
-.search-bar {
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 300px;
-}
-
-.filter-icon {
-  font-size: 20px;
-  cursor: pointer;
+.logo img {
+  max-height: 100%;
+  width: auto;
+  height: 50px; /* Adjust the height as needed */
   margin-right: 10px;
 }
 
-.profile {
-  cursor: pointer;
-  position: relative;
+
+.logo h1 {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+  line-height: 1;
+  font-weight: 600; /* Ensure heading text is vertically centered */
 }
 
-.arrow {
+.search-bar {
+  display: flex;
+  height:35px;
+  align-items: center;
+  background-color: var(--body-color);
+  padding: 5px 10px;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  flex: 1;
+  margin: 0 20px;
+  max-width: 500px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 5px;
+  flex: 1;
+  font-size: 16px;
+  color: var(--dark-gray);
+}
+
+.search-bar .search-icon {
+  color: var(--primary-color);
+  
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+  /* padding:0em 0 2rem; */
+}
+
+.user-section .icon {
+  font-size: 20px;
+  color: var(--dark-purple);
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.user-section .profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-section .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;  
+  object-fit: cover; 
+  margin-right: 10px;
+}
+
+.user-section .profile span {
+  font-size: 16px;
+  
+  color: var(--dark-gray);
+}
+
+.user-section .arrow-down {
+  border: solid var(--dark-gray);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
   margin-left: 5px;
 }
 
-.dropdown {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
-  z-index: 1000;
-}
-
-.dropdown ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.dropdown li {
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.dropdown li:hover {
-  background-color: #F5F5F5;
-}
-
-.filter-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  z-index: 1000;
-  animation: slide-down 0.3s ease-out;
-}
-
-.filter-column {
-  margin-bottom: 20px;
-}
-
-.filter-column h3 {
-  color: #333333;
-  margin-bottom: 10px;
-}
-
-.filter-column label {
-  display: block;
-  margin-bottom: 5px;
-  color: #7A7A7A;
-}
-
-.filter-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.apply-filter-button, .clear-filter-button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.apply-filter-button {
-  background-color: #8C61FF;
-  color: #FFFFFF;
-}
-
-.clear-filter-button {
-  margin-left: 20px;
-  background-color: #8C61FF;
-  color: #FFFFFF;
-}
-
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
+@media (max-width: 768px) {
+  .search-bar {
+    display: none;
   }
 }
