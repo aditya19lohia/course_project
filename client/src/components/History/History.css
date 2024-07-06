@@ -1,0 +1,99 @@
+
+.history-container {
+    background-color: #FFFFFF;
+    padding: 10px; /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    max-height: 400px; /* Set a maximum height */
+    overflow-y: auto; /* Add vertical scroll if content exceeds the height */
+    position: fixed; /* Fix the position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+  }
+  
+  .history-title {
+    color: #0b063e;
+    font-size: 1.5em; /* Reduced font size */
+    margin-bottom: 10px; /* Reduced margin */
+    font-weight: bold;
+  }
+  
+  .history-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .history-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F5F5F5;
+    padding: 8px 0; /* Reduced padding */
+  }
+  
+  .history-item:last-child {
+    border-bottom: none;
+  }
+  
+  .date-box {
+    width: 50px; /* Reduced width */
+    height: 50px; /* Reduced height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 10px; /* Reduced margin */
+    text-align: center;
+  }
+  
+  .date-text {
+    color: #333333;
+    font-weight: bold;
+    font-size: 0.8em; /* Reduced font size */
+  }
+  
+  .course-info {
+    flex: 1;
+  }
+  
+  .course-name {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .course-name:hover {
+    text-decoration: underline;
+  }
+  
+  .course-description {
+    font-size: 0.8em; /* Reduced font size */
+    font-weight: bold;
+  }
+  
+  .description-red {
+    color: #FF6B6B;
+  }
+  
+  .description-green {
+    color: #4CAF50;
+  }
+  
+  .description-orange {
+    color: #FFA726;
+  }
+  
+  .date-box-1 {
+    background-color: #f6efff;
+  }
+  
+  .date-box-2 {
+    background-color: #fefbec;
+  }
+  
+  .date-box-3 {
+    background-color: #feeff6;
+  }
+  
