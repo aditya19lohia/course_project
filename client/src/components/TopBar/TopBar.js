@@ -104,13 +104,13 @@ const TopBar = ({ logo, username, realName }) => {
         <div className="filter-dropdown">
           <div className="filter-column">
             <h3>Semester</h3>
-            <label><input type="checkbox" /> Fall</label>
-            <label><input type="checkbox" /> Spring</label>
-            <label><input type="checkbox" /> Summer</label>
+            <label><input type="checkbox" /> 1st</label>
+            <label><input type="checkbox" /> 2nd</label>
+            <label><input type="checkbox" /> 3rd</label>
           </div>
           <div className="filter-column">
             <h3>Department</h3>
-            <label><input type="checkbox" /> Computer Science</label>
+            <label><input type="checkbox" /> HSS</label>
             <label><input type="checkbox" /> Mathematics</label>
             <label><input type="checkbox" /> Physics</label>
           </div>
