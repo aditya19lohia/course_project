@@ -1,12 +1,15 @@
+
+
 .Calendar_History-container {
-  position: fixed;
-  top: 50px; /* Adjust as needed for spacing from the top */
-  right: 20px; /* Adjust as needed for spacing from the right */
+  position: relative; /* Changed from fixed */
+  top:2rem;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 350px;
-  max-width: 100%;
+
+  width: 100%; /* Changed from 350px */
+  max-width: 350px; /* Added max-width */
+  margin: 0 1px 0px auto; /* Center the container */
 }
 
 .calendar-container, .history-container {
@@ -15,17 +18,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   max-height: 400px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   width: 100%;
   margin: 10px 0;
 }
 
-.calendar-container {
-  background-color: var(--sidebar-color);
-}
-
 .history-container {
-  background-color: #FFFFFF;
+  max-height: auto; /* Limit height and enable scrolling */
+  /* overflow-y: auto; */
 }
 
 .calendar-header {
@@ -36,7 +36,7 @@
 }
 
 .calendar-month-year {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .calendar-nav {
@@ -52,13 +52,25 @@
   text-align: center;
 }
 
-.calendar-table th, .calendar-table td {
+.calendar-table th{
+  font-family:"Roboto",sans-serif;
   padding: 5px;
+  font-weight:600;
+  font-size:0.8rem;
+  border-radius: 47%;
+}
+
+.calendar-table td{
+  padding: 5px;
+  font-weight:500;
+  font-size:0.7rem;
   border-radius: 47%;
 }
 
 .calendar-table tbody td {
   cursor: pointer;
+  font-size:0.8rem;
+  color:#6f6f6f;
 }
 
 .calendar-table tbody td.selected {
@@ -76,10 +88,12 @@
 }
 
 .history-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: #0b063e;
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin-bottom: 10px;
-  font-weight: bold;
+
 }
 
 .history-content {
@@ -102,6 +116,7 @@
   width: 50px;
   height: 50px;
   display: flex;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
@@ -111,7 +126,7 @@
 
 .date-text {
   color: #333333;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 0.8em;
 }
 
@@ -120,8 +135,9 @@
 }
 
 .course-name {
+  font-family:"Poppins",sans-serif;
   color: #333333;
-  font-size: 15px;
+  font-size: 0.8rem;
   font-weight: 500;
   text-decoration: none;
   display: block;
@@ -138,6 +154,7 @@
 
 .description-red {
   color: #FF6B6B;
+  font-weight:400;
 }
 
 .description-green {
@@ -159,12 +176,10 @@
 /* Responsive styles */
 @media (max-width: 768px) {
   .Calendar_History-container {
-    position: static;
-    margin: 0 auto;
+    padding: 10px;
   }
 
   .calendar-container, .history-container {
-    margin-left: 0;
-    max-width: 100%;
+    max-height: none; /* Allow full height on mobile */
   }
 }
