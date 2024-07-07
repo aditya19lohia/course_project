@@ -1,16 +1,14 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
-import Calendar from '../components/Navbar/Calendar'
 import TopBar from '../components/TopBar/TopBar'
-import History from '../components/History/History'
+import Dashboard from '../components/Calendar_History'
 function Home() {
   return (
     <div>
     
     <Navbar />
-    <Calendar /> 
+    <Dashboard />
     <TopBar />
-    <History />
     
     </div>
   )
