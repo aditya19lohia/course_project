@@ -1,162 +1,170 @@
 .Calendar_History-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
+  position: fixed;
+  top: 50px; /* Adjust as needed for spacing from the top */
+  right: 20px; /* Adjust as needed for spacing from the right */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+}
+
+.calendar-container, .history-container {
+  background-color: var(--sidebar-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.calendar-container {
+  background-color: var(--sidebar-color);
+}
+
+.history-container {
+  background-color: #FFFFFF;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-month-year {
+  font-weight: 600;
+}
+
+.calendar-nav {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.calendar-table th, .calendar-table td {
+  padding: 5px;
+  border-radius: 47%;
+}
+
+.calendar-table tbody td {
+  cursor: pointer;
+}
+
+.calendar-table tbody td.selected {
+  background-color: #a15cf3;
+  color: #fff;
+}
+
+.calendar-table tbody td.range {
+  background-color: #e0c7f5;
+}
+
+.calendar-table tbody td.current {
+  background-color: #6a0dad;
+  color: #fff;
+}
+
+.history-title {
+  color: #0b063e;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.history-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F5F5F5;
+  padding: 8px 0;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.date-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.date-text {
+  color: #333333;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-name {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+}
+
+.course-name:hover {
+  text-decoration: underline;
+}
+
+.course-description {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.description-red {
+  color: #FF6B6B;
+}
+
+.description-green {
+  color: #4CAF50;
+}
+
+.description-orange {
+  color: #FFA726;
+}
+
+.date-box-1 {
+  background-color: #f6efff;
+}
+
+.date-box-2 {
+  background-color: #fefbec;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Calendar_History-container {
+    position: static;
+    margin: 0 auto;
   }
-  
-  .calendar-container {
-    background-color: var(--sidebar-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    flex: 1 1 45%;
-    max-height: 400px;
-    overflow-y: auto;
-    margin-top: 50px;
-    margin-left: 1120px;
-    width: 350px;
+
+  .calendar-container, .history-container {
+    margin-left: 0;
+    max-width: 100%;
   }
-  
-  .calendar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .calendar-month-year {
-    font-weight: bold;
-  }
-  
-  .calendar-nav {
-    background-color: transparent;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .calendar-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-  }
-  
-  .calendar-table th, .calendar-table td {
-    padding: 5px;
-    border-radius: 50%;
-  }
-  
-  .calendar-table tbody td {
-    cursor: pointer;
-  }
-  
-  .calendar-table tbody td.selected {
-    background-color: #a15cf3;
-    color: #fff;
-  }
-  
-  .calendar-table tbody td.range {
-    background-color: #e0c7f5;
-  }
-  
-  .calendar-table tbody td.current {
-    background-color: #6a0dad;
-    color: #fff;
-  }
-  
-  .history-container {
-    background-color: #FFFFFF;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 45%;
-    max-height: 400px;
-    overflow-y: auto;
-    margin-top: 20px;
-    margin-left: 1120px;
-    width: 350px;
-  }
-  
-  .history-title {
-    color: #0b063e;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .history-content {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .history-item {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #F5F5F5;
-    padding: 8px 0;
-  }
-  
-  .history-item:last-child {
-    border-bottom: none;
-  }
-  
-  .date-box {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    margin-right: 10px;
-    text-align: center;
-  }
-  
-  .date-text {
-    color: #333333;
-    font-weight: bold;
-    font-size: 0.8em;
-  }
-  
-  .course-info {
-    flex: 1;
-  }
-  
-  .course-name {
-    color: #333333;
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .course-name:hover {
-    text-decoration: underline;
-  }
-  
-  .course-description {
-    font-size: 0.8em;
-    font-weight: bold;
-  }
-  
-  .description-red {
-    color: #FF6B6B;
-  }
-  
-  .description-green {
-    color: #4CAF50;
-  }
-  
-  .description-orange {
-    color: #FFA726;
-  }
-  
-  .date-box-1 {
-    background-color: #f6efff;
-  }
-  
-  .date-box-2 {
-    background-color: #fefbec;
-  }
-  
-  
+}
