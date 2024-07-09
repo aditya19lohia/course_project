@@ -17,6 +17,10 @@ const TopRatedCourses = () => {
         { id: 1, name: 'Introduction to React', professor: 'Dr. Smith', rating: 4.8, color: '#FF5722' },
         { id: 2, name: 'Advanced Algorithms', professor: 'Prof. Johnson', rating: 4.7, color: '#2196F3' },
         { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
+        { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
+        { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
+        { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
+        { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
       ]);
     };
 

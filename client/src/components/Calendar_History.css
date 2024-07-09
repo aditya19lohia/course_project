@@ -1,15 +1,12 @@
-
-
 .Calendar_History-container {
-  position: relative; /* Changed from fixed */
-  top:2rem;
+  position: relative;
+  /* top: 2rem; */
   display: flex;
   flex-direction: column;
   padding: 20px;
-
-  width: 100%; /* Changed from 350px */
-  max-width: 350px; /* Added max-width */
-  margin: 0 1px 0px auto; /* Center the container */
+  width: 100%;
+  max-width: 350px;
+  margin: 0 1px 0px auto;
 }
 
 .calendar-container, .history-container {
@@ -17,15 +14,19 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  max-height: 400px;
-  /* overflow-y: auto; */
+  height:16rem;
   width: 100%;
   margin: 10px 0;
 }
 
 .history-container {
-  max-height: auto; /* Limit height and enable scrolling */
-  /* overflow-y: auto; */
+  max-height: 250px; /* Adjust height for 4 items */
+  overflow-y: auto; /* Hide scroll by default */
+}
+
+.history-container.expanded {
+  overflow-y: auto; /* Enable scroll when expanded */
+  max-height: 400px; /* Adjust as needed */
 }
 
 .calendar-header {
@@ -52,25 +53,25 @@
   text-align: center;
 }
 
-.calendar-table th{
-  font-family:"Roboto",sans-serif;
+.calendar-table th {
+  font-family: "Roboto", sans-serif;
   padding: 5px;
-  font-weight:600;
-  font-size:0.8rem;
+  font-weight: 600;
+  font-size: 0.8rem;
   border-radius: 47%;
 }
 
-.calendar-table td{
+.calendar-table td {
   padding: 5px;
-  font-weight:500;
-  font-size:0.7rem;
+  font-weight: 500;
+  font-size: 0.7rem;
   border-radius: 47%;
 }
 
 .calendar-table tbody td {
   cursor: pointer;
-  font-size:0.8rem;
-  color:#6f6f6f;
+  font-size: 0.8rem;
+  color: #6f6f6f;
 }
 
 .calendar-table tbody td.selected {
@@ -84,6 +85,7 @@
 
 .calendar-table tbody td.current {
   background-color: #6a0dad;
+  border-radius:100%;
   color: #fff;
 }
 
@@ -93,7 +95,6 @@
   color: #0b063e;
   font-size: 1.1em;
   margin-bottom: 10px;
-
 }
 
 .history-content {
@@ -113,10 +114,10 @@
 }
 
 .date-box {
-  width: 50px;
+  width: 40px;
   height: 50px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
@@ -135,7 +136,7 @@
 }
 
 .course-name {
-  font-family:"Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #333333;
   font-size: 0.8rem;
   font-weight: 500;
@@ -154,7 +155,7 @@
 
 .description-red {
   color: #FF6B6B;
-  font-weight:400;
+  font-weight: 400;
 }
 
 .description-green {
@@ -171,6 +172,28 @@
 
 .date-box-2 {
   background-color: #fefbec;
+}
+
+.history_button{
+  display:flex;
+  justify-content:center;
+}
+
+.view-more-button {
+  font-family: "Poppins", sans-serif;
+  background-color: #8C61FF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display:flex;
+  margin-top:10px;
+  text-align: center;
+}
+
+.view-more-button:hover {
+  background-color: #7a56e6;
 }
 
 /* Responsive styles */
