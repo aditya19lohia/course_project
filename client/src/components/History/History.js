@@ -30,7 +30,7 @@ const History = () => {
               <span className="date-text">{item.date}</span>
             </div>
             <div className="course-info">
-              <a href={`/course/${item.courseName}`} className="course-name">{item.courseName}</a>
+              <a href={`/course/${item.courseName}`} className="course-name" style={{fontWeight:500}}>{item.courseName}</a>
               <p className={`course-description ${item.description === 'Assignments' ? 'description-red' : item.description === 'Test' ? 'description-green' : 'description-orange'}`}>{item.description}</p>
             </div>
           </div>

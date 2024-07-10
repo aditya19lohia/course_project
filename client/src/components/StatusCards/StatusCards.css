@@ -1,0 +1,46 @@
+.status-card {
+    border-radius: 12px;
+    padding: 20px;
+    width: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .status-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .status-card-icon {
+    font-size: 35px;
+  }
+  
+  .status-card-progress {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: conic-gradient(
+      #333 var(--progress),
+      #ddd var(--progress)
+    );
+  }
+  
+  .status-card-content {
+    text-align: left;
+  }
+  
+  .status-card-statistic {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  .status-card-label {
+    font-size: 14px;
+    margin: 0;
+    color: #666;
+  }
