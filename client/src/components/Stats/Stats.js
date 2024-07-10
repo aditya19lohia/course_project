@@ -5,6 +5,7 @@ import { FaStar, FaClipboardList, FaUsers } from 'react-icons/fa';
 function Stats() {
   return (
     <div className="stats-Container">
+    <h2 className="status-title">Status</h2>
       <div className='status-cards'>
        <StatusCard
           backgroundColor="#fff4de"

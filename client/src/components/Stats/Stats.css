@@ -8,6 +8,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+.status-title{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #0b063e;
+  font-size: 1.1em;
+  /* margin-bottom: 1e; */
+}
 .stats-Container {
     padding: 20px;
   }
