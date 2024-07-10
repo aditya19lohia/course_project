@@ -19,8 +19,8 @@ const TopRatedCourses = () => {
         { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
         { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
         { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
-        { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
-        { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
+        // { id: 3, name: 'Data Science Fundamentals', professor: 'Dr. Lee', rating: 4.6, color: '#4CAF50' },
+     
       ]);
     };
 
