@@ -32,6 +32,9 @@ p, span, a, li, input, button {
 
 
 :root {
+  --sidebar-width: 15rem; /* Adjust the sidebar width as needed */
+  --topbar-height: 3rem; /* Adjust the top bar height as needed */
+  --right-column-width: 24%; /* Adjust the right column width as needed */
   --body-color: #f0f1f0;
   --sidebar-color: #FFFFFF;
   --primary-color: #8338eb;
