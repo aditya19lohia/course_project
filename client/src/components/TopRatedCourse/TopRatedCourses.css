@@ -3,10 +3,11 @@
     border-radius: 10px;
     padding: 16px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 50%;
-    margin-left: 20%;
-    margin-top: 25%;
-    max-height: 400%;
+    width: 100%;
+    margin-left: 14%;
+    /* margin-top: 25%; */
+    margin:10px 0 2px ;
+    max-height: 21rem;
   }
   
   .top-rated-courses__title {
