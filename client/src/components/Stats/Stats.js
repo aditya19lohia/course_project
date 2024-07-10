@@ -1,35 +1,40 @@
-import React from 'react'
+import React from 'react';
 import './Stats.css';
 import StatusCard from '../StatusCards/StatusCards';
 import { FaStar, FaClipboardList, FaUsers } from 'react-icons/fa';
+
 function Stats() {
   return (
     <div className="stats-Container">
       <div className='status-cards'>
-       <StatusCard
+        <StatusCard
           backgroundColor="#fff4de"
-          icon={<FaStar />}
+          icon={<FaStar style={{ color: '#F8D775' }} />}
           statistic="1,254"
           label="Total Reviews"
           progress={0.8}
+          progressColor="#F8D775"
         />
         <StatusCard
           backgroundColor="#ffe2e6"
-          icon={<FaClipboardList />}
+          icon={<FaClipboardList style={{ color: '#F29B9B' }} />}
           statistic="326"
           label="Courses Rated"
           progress={0.65}
+          progressColor="#F29B9B"
         />
         <StatusCard
           backgroundColor="#dcfce7"
-          icon={<FaUsers />}
+          icon={<FaUsers style={{ color: '#8BC3A3' }} />}
           statistic="5,721"
           label="Active Users"
           progress={0.92}
+          progressColor="#8BC3A3"
         />
-        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Stats
+export default Stats;
+
