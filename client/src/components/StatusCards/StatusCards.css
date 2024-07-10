@@ -24,7 +24,7 @@
     height: 40px;
     border-radius: 50%;
     background: conic-gradient(
-      #333 var(--progress),
+      var(--progress-color) var(--progress),
       #ddd var(--progress)
     );
   }
