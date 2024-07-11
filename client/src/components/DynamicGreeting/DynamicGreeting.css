@@ -5,8 +5,8 @@
 .title-text {
   font-family: 'Roboto',sans-serif;
   font-weight: normal;
-  width: 900px;
-  font-size: 1rem;
+  width: 100%;
+  font-size: 0.8em;
   color: var(--text-color);
   text-align: left;
 }

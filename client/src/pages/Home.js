@@ -8,7 +8,7 @@ import DynamicGreeting from "../components/DynamicGreeting/DynamicGreeting"
 import './Home.css';
 
 function Home() {
-  const userName = 'John Doe'; // Replace with actual user name
+  const userName = 'Geetu Arora'; // Replace with actual user name
 
   return (
     <div className="home-container">

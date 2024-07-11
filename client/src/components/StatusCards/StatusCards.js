@@ -1,7 +1,7 @@
 import React from 'react';
 import './StatusCards.css';
 
-const StatusCard = ({ backgroundColor, icon, statistic, label, progress, progressColor }) => {
+const StatusCard = ({ backgroundColor, icon, statistic, label, progress,progressColor }) => {
   return (
     <div className="status-card" style={{ backgroundColor }}>
       <div className="status-card-header">

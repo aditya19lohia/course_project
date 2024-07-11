@@ -6,6 +6,7 @@ import { FaStar, FaClipboardList, FaUsers } from 'react-icons/fa';
 function Stats() {
   return (
     <div className="stats-Container">
+    <h2 className="status-title">Status</h2>
       <div className='status-cards'>
         <StatusCard
           backgroundColor="#fff4de"
@@ -28,7 +29,6 @@ function Stats() {
           icon={<FaUsers style={{ color: '#8BC3A3' }} />}
           statistic="5,721"
           label="Active Users"
-          progress={0.92}
           progressColor="#8BC3A3"
         />
       </div>

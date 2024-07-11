@@ -6,14 +6,17 @@
     width: 100%;
     margin-left: 14%;
     /* margin-top: 25%; */
+    
     margin:10px 0 2px ;
     max-height: 21rem;
   }
   
   .top-rated-courses__title {
-    font-size: 18px;
-    margin-bottom: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
     color: #0b063e;
+    font-size: 1.1em;
+    margin-bottom: 10px;
   }
   
   .course-list {

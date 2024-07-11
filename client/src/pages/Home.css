@@ -25,12 +25,14 @@
 }
 
 .right-column {
+  
   flex: 1;
   position: relative;
   position: fixed;
   right: 10px;
-  width: 350px;
-  height: 100vh;
-  top: 50px;             /* Adjust to make space for the TopBar */
+  width: 25%;
+  height: 100%;
+  padding-bottom:2rem;
+  top: 3rem;             /* Adjust to make space for the TopBar */
   margin-left: auto;
 }
