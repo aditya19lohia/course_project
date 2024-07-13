@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import './Stats.css';
 import StatusCard from '../StatusCards/StatusCards';
 import { FaStar, FaClipboardList, FaUsers } from 'react-icons/fa';
+
 function Stats() {
   return (
     <div className="stats-Container">
     <h2 className="status-title">Status</h2>
       <div className='status-cards'>
-       <StatusCard
+        <StatusCard
           backgroundColor="#fff4de"
           icon={<FaStar style={{ color: '#F8D775' }} />}
           statistic="1,254"
@@ -30,9 +31,10 @@ function Stats() {
           label="Active Users"
           progressColor="#8BC3A3"
         />
-        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Stats
+export default Stats;
+

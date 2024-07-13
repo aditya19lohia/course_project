@@ -1,3 +1,4 @@
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -13,26 +14,75 @@
 .left-column {
   flex: 2;
   display: flex;
-  width:70%;
-  margin-right:23rem;
   flex-direction: column;
   align-items: flex-end;
   overflow-y: auto;
-  padding:20px 0px 20px 20px;
-  /* padding-right: 370px;  */
-  margin-left: 250px;   
+  padding: 20px;
+  margin-left: 250px;
   height: 100%;
+  max-width: 60%; /* Adjusted max-width */
 }
 
 .right-column {
-  
   flex: 1;
-  position: relative;
   position: fixed;
   right: 10px;
   width: 25%;
   height: 100%;
-  padding-bottom:2rem;
-  top: 3rem;             /* Adjust to make space for the TopBar */
+  padding-bottom: 2rem;
+  top: 3rem; /* Adjust to make space for the TopBar */
   margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .left-column {
+      margin-left: 200px;
+      max-width: 55%; /* Adjusted max-width */
+  }
+  
+  .right-column {
+      right: 0;
+      width: 30%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .left-column {
+      margin-left: 150px;
+      max-width: 50%; /* Adjusted max-width */
+  }
+  
+  .right-column {
+      right: 0;
+      width: 35%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .left-column {
+      margin-left: 100px;
+      max-width: 45%; /* Adjusted max-width */
+  }
+  
+  .right-column {
+      right: 0;
+      width: 100%;
+      position: relative;
+      top: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .left-column {
+      margin-left: 50px;
+      max-width: 100%;
+  }
+  
+  .right-column {
+      display: none;
+  }
+}
+.top-rated-courses {
+  height: calc(100vh - 250px); /* Adjust height to ensure it ends where the Recent Activity component ends */
+  overflow-y: auto;
 }
