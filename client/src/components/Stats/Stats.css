@@ -1,6 +1,6 @@
 .stats-Container{
     width:100%;
-    height:50%;
+    height:40%;
     margin-top:10px;
     margin-bottom:10px;
     background-color: var(--sidebar-color);
@@ -12,16 +12,17 @@
 .status-title{
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+
   color: #0b063e;
   font-size: 1.1em;
   /* margin-bottom: 1e; */
 }
 .stats-Container {
-    padding: 20px;
+    padding:1rem 1rem 1rem 1rem;
   }
   
   .status-cards {
     display: flex;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
