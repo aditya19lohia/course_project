@@ -1,6 +1,6 @@
 import React from 'react';
 import './TopBar.css';
-import { Bell, MessageSquareMore } from 'lucide-react';
+import { Bell, MessageSquareMore, Filter } from 'lucide-react';
 
 const Topbar = () => {
   return (
@@ -8,13 +8,9 @@ const Topbar = () => {
       <div className="logo">
         <img src="/images/logo.jpg" alt="Logo" />
         <a href='/home'>
-        <h1>RateMyCourse</h1>
+          <h1>RateMyCourse</h1>
         </a>
       </div>
-      {/* <div className="DashBoard"> 
-        <h2>Dashboard</h2>
-      </div> */}
-      
       <div className="search-bar">
         <svg
           className="search-icon"
@@ -32,9 +28,10 @@ const Topbar = () => {
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
         <input style={{marginLeft:"10px"}} type="text" placeholder="Search here..." />
+        <Filter className="filter-icon" />
       </div>
       <div className="user-section">
-      <MessageSquareMore className="icon" />
+        <MessageSquareMore className="icon" />
         <Bell className="icon" />
         <div className="profile">
           <img src="/images/demo_person.jpg" alt="User" />

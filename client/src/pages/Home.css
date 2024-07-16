@@ -8,7 +8,7 @@
 .content-wrapper {
   display: flex;
   flex: 1;
-  margin-top: 50px; /* Adjust to make space for the TopBar */
+  margin-top: 50px; 
 }
 
 .left-column {
@@ -20,7 +20,7 @@
   padding: 1.5rem 2rem 2rem 1rem;
   margin-left: 250px;
   height: 100%;
-  max-width: 60%; /* Adjusted max-width */
+  max-width: 60%; 
 }
 
 .right-column {
@@ -30,14 +30,14 @@
   width: 25%;
   height: 100%;
   padding-bottom: 2rem;
-  top: 3rem; /* Adjust to make space for the TopBar */
+  top: 3rem; 
   margin-left: auto;
 }
 
 @media screen and (max-width: 1200px) {
   .left-column {
       margin-left: 200px;
-      max-width: 55%; /* Adjusted max-width */
+      max-width: 55%;
   }
   
   .right-column {
@@ -49,7 +49,7 @@
 @media screen and (max-width: 992px) {
   .left-column {
       margin-left: 150px;
-      max-width: 50%; /* Adjusted max-width */
+      max-width: 50%; 
   }
   
   .right-column {
@@ -61,7 +61,7 @@
 @media screen and (max-width: 768px) {
   .left-column {
       margin-left: 100px;
-      max-width: 45%; /* Adjusted max-width */
+      max-width: 45%;
   }
   
   .right-column {
@@ -83,6 +83,6 @@
   }
 }
 .top-rated-courses {
-  height: calc(100vh - 250px); /* Adjust height to ensure it ends where the Recent Activity component ends */
+  height: calc(100vh - 250px); 
   overflow-y: auto;
 }
