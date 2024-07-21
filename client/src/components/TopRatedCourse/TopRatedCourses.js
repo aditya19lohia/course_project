@@ -75,11 +75,11 @@ const TopRatedCourses = () => {
 
   return (
     <div className="top-rated-courses">
-      <h2 className="top-rated-courses__title">My Courses</h2>
+      <h2 className="top-rated-courses__title">Top Rated Courses</h2>
       <div className="course-header-bar">
-        <span className="header-item course-name">Course Name</span>
-        <span className="header-item professor-name">Professor Name</span>
-        <span className="header-item course-rating">Course Rating</span>
+        <span className="header-item course-name" style={{textDecoration:"none"}}>Course Name</span>
+        <span className="header-item professor-name" style={{textDecoration:"none"}}>Professor Name</span>
+        <span className="header-item course-rating" style={{textDecoration:"none"}}>Course Rating</span>
       </div>
       <ul className="course-list">
         {courses.map(course => (

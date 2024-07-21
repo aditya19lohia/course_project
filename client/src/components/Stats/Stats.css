@@ -1,6 +1,6 @@
 .stats-Container{
     width:100%;
-    height:40%;
+    height:14rem;
     margin-top:10px;
     margin-bottom:10px;
     background-color: var(--sidebar-color);
@@ -14,7 +14,7 @@
   font-weight: 600;
 
   color: #0b063e;
-  font-size: 1.1em;
+  font-size: 1rem;
   /* margin-bottom: 1e; */
 }
 .stats-Container {

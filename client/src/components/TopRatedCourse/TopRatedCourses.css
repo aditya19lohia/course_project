@@ -14,7 +14,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #0b063e;
-    font-size: 1.1em;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
   
@@ -28,6 +28,12 @@
     margin-bottom: 10px;
     font-weight: 500;
     color: #333;
+  }
+
+  .header-item{
+    text-decoration:none;
+    /* cursor:auto; */
+    underline:none;
   }
   
   .header-item {
